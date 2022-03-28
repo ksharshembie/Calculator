@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">6dp</dimen>
+    <dimen name="button_margin">18dp</dimen>
+    <dimen name="padding_text_zero">0dp</dimen>
+    <dimen name="padding_text_start">32dp</dimen>
+    <dimen name="big_btn_width">178dp</dimen>
+</resources>
