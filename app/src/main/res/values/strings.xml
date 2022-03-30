@@ -20,4 +20,8 @@
     <string name="plus_minus">+/-</string>
     <string name="all_clear">AC</string>
     <string name="division_to_zero">Division to zero restristed!!!</string>
+    <string name="send_result">Send</string>
+    <string name="close">Close</string>
+    <string name="result">Result</string>
+
 </resources>

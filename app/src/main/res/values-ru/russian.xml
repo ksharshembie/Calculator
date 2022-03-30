@@ -21,4 +21,7 @@
     <string name="plus_minus">+/-</string>
     <string name="all_clear">AC</string>
     <string name="division_to_zero">Деление на ноль запрещено!!!</string>
+    <string name="send_result">Отправить</string>
+    <string name="close">Закрыть</string>
+    <string name="result">Результат</string>
 </resources>
