@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
                             ((MaterialButton)findViewById(R.id.btn_next)).setAlpha(0);
                         } else {
                             result = first / second;
+                            ((MaterialButton)findViewById(R.id.btn_next)).setAlpha(1);
                         }
                         break;
                 }
