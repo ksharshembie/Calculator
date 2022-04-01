@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.button.MaterialButton;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
@@ -133,17 +135,21 @@ public class MainActivity extends AppCompatActivity {
                 switch (operationType) {
                     case "+":
                         result = first + second;
+                        ((MaterialButton)findViewById(R.id.btn_next)).setAlpha(1);
                         break;
                     case "-":
                         result = first - second;
+                        ((MaterialButton)findViewById(R.id.btn_next)).setAlpha(1);
                         break;
                     case "*":
                         result = first * second;
+                        ((MaterialButton)findViewById(R.id.btn_next)).setAlpha(1);
                         break;
                     case "/":
                         if (second == 0) {
                             Toast.makeText(MainActivity.this, R.string.division_to_zero, Toast.LENGTH_SHORT).show();
                             allClear();
+                            ((MaterialButton)findViewById(R.id.btn_next)).setAlpha(0);
                         } else {
                             result = first / second;
                         }
@@ -174,6 +180,7 @@ public class MainActivity extends AppCompatActivity {
                     if (temp == 0) {
                         Toast.makeText(MainActivity.this, R.string.division_to_zero, Toast.LENGTH_SHORT).show();
                         allClear();
+                        ((MaterialButton)findViewById(R.id.btn_next)).setAlpha(0);
                     } else {
                         first /= temp;
                     }
@@ -185,6 +192,7 @@ public class MainActivity extends AppCompatActivity {
             first = Integer.parseInt(textView.getText().toString());
             isOperationClickFirst = true;
         }
+        ((MaterialButton)findViewById(R.id.btn_next)).setAlpha(0);
         isOperationClick = true;
     }
 
